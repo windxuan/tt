@@ -1,177 +1,415 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Required meta tags -->
 
-<head>
-	<meta charset="UTF-8">
-	<title>蛙乐宝社区服务平台</title>
-	<meta name="keywords" content="">
-	<meta name="description" content=" ">
-	<link rel="stylesheet" type="text/css" href="css/include.css" />
-	<!-- jquery -->
-	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
-	<!-- swiper组件 -->
-	<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
-	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-</head>
+    <title>蛙乐宝官网</title>
+    <!--<meta charset="utf-8">-->
+    <meta
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+      name="viewport"
+    />
+    <meta name="keywords" content="蛙乐宝官网" />
+    <meta name="description" content="蛙乐宝官网" />
 
-<body>
-	<div class="menu">
-		<div class="menu_center">
-			<h2><a href=""><img src="imgs/logo_文字_绿.jpg" width="433px" height="82px" /></a></h2>
-			<div class="navgroup">
-				<a href="index.html" class="active">蛙乐宝：做良心的社区服务平台</a>
-			</div>
-		</div>
+    <link type="image/x-icon" href="images/favicon.ico" rel="shortcut icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=1572311855" />
+    <link rel="stylesheet" href="css/animate.min.css?v=1572311855" />
+    <link rel="stylesheet" href="css/main.css?v=1572311855" />
 
-	</div>
+    <link rel="stylesheet" href="css/swiper.min.css?v=1572311855" />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/anime.min.js"></script>
 
-	<!-- swiper滑动组件 -->
-	<div class="banner">
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-image: url(imgs/ban.jpg);"></div>
-				<div class="swiper-slide" style="background-image: url(imgs/ban.jpg);"></div>
-				<div class="swiper-slide" style="background-image: url(imgs/ban.jpg);"></div>
-			</div>
-			<!-- 滑动组件 -->
-			<div class="swiper-pagination"></div>
-		</div>
-	</div>
+    <script src="js/swiper.min.js?v=1572311855"></script>
 
-	<div class="outbox">
-		<!-- content-1 抬头-公司简介 -->
-		<div class="bigtitle">
-			<img src="imgs/gsjj.png" />
-		</div>
-		<div class="aboutbox">
-			<dl>
-				<dt>关于我们</dt>
-				<dd>
-					<p>
-						公司详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容......
-					</p>
-				</dd>
-			</dl>
-			<!-- 辅图 -->
-			<img src="imgs/logo_t.jpg" width="352px" height="765px" />
-		</div>
+    <link rel="stylesheet" href="css/index.css?v=1572311855" />
+  </head>
 
-		<div class="bigtitle">
-			<!-- content-2 抬头-公司产品展示 -->
-			<img src="imgs/gscp.png" />
-		</div>
-		<div class="proslists">
-			<div class="list_li">
-				<span>
-					<img src="imgs/ban_1.jpg" />
-				</span>
-				<strong>产品名称</strong>
-			</div>
-			<div class="list_li">
-				<span>
-					<img src="imgs/ban_2.jpg" />
-				</span>
-				<strong>产品名称</strong>
-			</div>
-			<div class="list_li">
-				<span>
-					<img src="imgs/ban_2.jpg" />
-				</span>
-				<strong>产品名称</strong>
-			</div>
-			<div class="list_li">
-				<span>
-					<img src="imgs/ban_2.jpg" />
-				</span>
-				<strong>产品名称</strong>
-			</div>
-			<div class="list_li">
-				<span>
-					<img src="imgs/ban_3.jpg" />
-				</span>
-				<strong>产品名称</strong>
-			</div>
-			<div class="list_li">
-				<span>
-					<img src="imgs/ban_3.jpg" />
-				</span>
-				<strong>产品名称</strong>
-			</div>
-			<div class="list_li">
-				<span>
-					<img src="imgs/ban_3.jpg" />
-				</span>
-				<strong>产品名称</strong>
-			</div>
-			<div class="list_li">
-				<span>
-					<img src="imgs/ban_3.jpg" />
-				</span>
-				<strong>产品名称</strong>
-			</div>
-		</div>
-	</div>
+  <body>
+    <header id="header">
+      <div class="my-container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+              <img src="images/wlb_logo_1.png" width="130.5" height="45" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">网站首页</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="member.html">团长入驻</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shopService.html">团长开店经营</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="customer.html">消费者服务</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="supplierService.html"
+                    >蛙乐宝供应商</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">公司动态</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="masker"></div>
 
-	<div class="news">
-		<div class="bigtitle">
-			<!-- content-3 抬头-新闻资讯 -->
-			<img src="imgs/xwzx.png" />
-		</div>
-		<div class="news_center">
-			<dl>
-				<dt>产品介绍</dt>
-				<dd>NEWS LIST</dd>
-			</dl>
+    <!-- 主要内容 开始 -->
+    <div class="swiper-container pc">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="http://static-source.wukongzhanggui.com/images/20190708/5d2338f34fa1a.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-container web">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="http://static-source.wukongzhanggui.com/images/20190708/5d2338f7947fd.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="container">
+      <div class="about">
+        <img class="about-img" src="images/wlb_pictrue.png" />
+        <div class="about-desc">
+          <h3 class="desc-title">关于蛙乐宝</h3>
+          <p class="desc-p">
+            蛙乐宝是以新零售模式为设计理念的社区团购电子商务平台
+          </p>
+          <p class="desc-p2">
+            蛙乐宝——是以互联网技术为依托、以消费者需求为中心的社区电商平台，把产地供应商和消费者有机连接起来，为社区居民提供绿色健康、物美价廉的高性价比精选商品。
+          </p>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service-title">为您服务</div>
+        <div class="service-content clearfix">
+          <div class="item fl mr28">
+            <div class="item-img">
+              <img src="images/wlb_pictrue_2.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3 class="desc-h3">成为团长</h3>
+              <p class="desc-p">
+                团长与”蛙乐宝”为合作伙伴关系，用我们的平台开店销您的货，扩大销售量。
+              </p>
+              <div class="desc-btn">
+                <a href="member.html" class="btn1">查看详情</a>
+              </div>
+            </div>
+          </div>
+          <div class="item fl mr28">
+            <div class="item-img">
+              <img src="images/ser_center.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3 class="desc-h3">店铺经营策略</h3>
+              <p class="desc-p">
+                蛙乐宝平台坚持以严选好货树信任、认真服务立口碑为宗旨，提供6大核心服务，让消费者放心且满意。
+              </p>
+              <div class="desc-btn">
+                <a href="shopService.html" class="btn1">查看详情</a>
+              </div>
+            </div>
+          </div>
+          <div class="item fl">
+            <div class="item-img">
+              <img src="images/ser_right.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3 class="desc-h3">蛙乐宝供应商</h3>
+              <p class="desc-p">
+                蛙乐宝平台会持续提升供应商服务水平及标准，力争实现“因需定产、快速周转”的使命，不断为供应商赋能。
+              </p>
+              <div class="desc-btn">
+                <a href="supplierService.html" class="btn1">查看详情</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ser">
+        <div class="ser-item mb40">
+          <p class="title">成为团长</p>
+          <p class="desc">
+            团长与”蛙乐宝”为合作伙伴关系，用我们的平台开店销您的货，扩大销售量。
+          </p>
+        </div>
+        <div class="ser-item mb40">
+          <p class="title">店铺经营策略</p>
+          <p class="desc">
+            蛙乐宝平台坚持以严选好货树信任、认真服务立口碑为宗旨，提供6大核心服务，让消费者放心且满意。
+          </p>
+        </div>
+        <div class="ser-item">
+          <p class="title">蛙乐宝供应商</p>
+          <p class="desc">
+            蛙乐宝平台会持续提升供应商服务水平及标准，力争实现“因需定产、快速周转”的使命，不断为供应商赋能。
+          </p>
+        </div>
+        <img src="images/wlb_pictrue_2.png" alt="" />
+      </div>
+    </div>
+    <div style="width: 100%; background: #f9f8f7;" class="main">
+      <div class="swiper" style="background-image: url(images/swiper_bg.png);">
+        <div class="container">
+          <div class="swiper-top">
+            <h3>五大部门多位一体</h3>
+            <p>
+              蛙乐宝技术到服务全面把控，为平台客户带来全方位优良体验，解决平台客户的售前售后多重忧虑。
+            </p>
+          </div>
 
-			<ul>
-				<li>
-					<span>2020-1-29</span>
-					<div>
-						<a href="javascript:void(0)">产品名称</a>
-						<p>产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述</p>
-					</div>
-				</li>
-				<li>
-					<span>2020-1-29</span>
-					<div>
-						<a href="javascript:void(0)">产品名称</a>
-						<p>产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述</p>
-					</div>
-				</li>
-				<li>
-					<span>2020-1-29</span>
-					<div <a href="javascript:void(0)">产品名称</a>
-						<p>产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+          <!-- Swiper -->
+          <div class="swiper-list">
+            <div class="swiper-container middle">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="slide-img" src="images/slide1.png" alt="" />
+                  <h4>互联网中心</h4>
+                  <p>
+                    互联网技术作为蛙乐宝平台的核心基础，公司技术部门拥有优秀的开发团队，由武汉大学博士提供商务模式和技术支持。
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="slide-img" src="images/slide2.png" alt="" />
+                  <h4>市场运营中心</h4>
+                  <p>
+                    市场运营中心为小店经营者开设培训课程，为店铺经营者提供运营方法，提高销售量。
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="slide-img" src="images/slide3.png" alt="" />
+                  <h4>物流配送</h4>
+                  <p>
+                    公司采用统一的物流配送体系，实现不同商品统一配送，有效实现配送渠道整合，提高配送效率，降低配送成本。
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="slide-img" src="images/slide4.png" alt="" />
+                  <h4>组织中心</h4>
+                  <p>
+                    承担人才培训考核、行政制度建设、对外联系协调等多重职责。
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="slide-img" src="images/slide5.png" alt="" />
+                  <h4>平台运营</h4>
+                  <p>
+                    公司负责整体运营，并提供供应链、物流仓储、售后、技术支持、客服等服务。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="prev" class="prev">
+              <img src="images/icon_left.png" alt="" />
+            </div>
+            <div id="next" class="next">
+              <img src="images/icon_right.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main2">
+      <div class="main2-top">
+        <p class="top-title">五大部门多位一体</p>
+        <p class="top-desc">
+          蛙乐宝技术到服务全面把控，为平台客户带来全方位优良体验，解决平台客户的售前售后多重忧虑。
+        </p>
+      </div>
+      <div class="main2-swiper">
+        <!-- Swiper -->
+        <div class="swiper2-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="slide-img" src="images/slide1.png" alt="" />
+              <h4>互联网中心</h4>
+              <p>
+                互联网技术作为蛙乐宝平台的核心基础，公司技术部门拥有优秀的开发团队，由武汉大学博士提供商务模式和技术支持。
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide-img" src="images/slide2.png" alt="" />
+              <h4>市场运营中心</h4>
+              <p>
+                市场运营中心为小店经营者开设培训课程，为店铺经营者提供运营方法，提高销售量。
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide-img" src="images/slide3.png" alt="" />
+              <h4>物流配送</h4>
+              <p>
+                公司采用统一的物流配送体系，实现不同商品统一配送，有效实现配送渠道整合，提高配送效率，降低配送成本。
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide-img" src="images/slide4.png" alt="" />
+              <h4>组织中心</h4>
+              <p>
+                承担人才培训考核、行政制度建设、对外联系协调等多重职责。
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img class="slide-img" src="images/slide5.png" alt="" />
+              <h4>平台运营</h4>
+              <p>
+                公司负责整体运营，并提供供应链、物流仓储、售后、技术支持、客服等服务。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- 页脚 -->
-	<div class="footer">
-		<div class="footer_center">
-			<dl>
-				<dt>地址：湖北省武汉市xxxxxxxxxx</dt>
-				<dd>网址：xxxxxxxxxxxx</dd>
-				<dd>客服：xxxxxxxxxx(QQ)</dd>
-				<dd>联系我们：xxxxxxxxxx</dd>
-			</dl>
-			<img src="imgs/ewm_1.png" />
-		</div>
-		<div class="copyright">
-			CopyRight All Right Reserved 聚影网 粤ICP备16816466号
-		</div>
-	</div>
-	<script>
-		// swiper滑动组件
-		var swiper = new Swiper('.swiper-container', {
-			pagination: {
-				el: '.swiper-pagination',
-				dynamicBullets: true,
-			},
-		});
-	</script>
-</body>
+    <script>
+      var swiper = new Swiper('.middle', {
+        slidesPerView: 3,
+        spaceBetween: 48,
+        // centeredSlides: true,
+        loop: false,
+      });
+      $('#prev').click(function () {
+        swiper.slidePrev();
+      });
+      $('#next').click(function () {
+        swiper.slideNext();
+      });
+      var swiper2 = new Swiper('.swiper2-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        loop: false,
+      });
+    </script>
 
+    <script language="javascript">
+      var count = 1;
+      if (count > 1) {
+        var mySwiper = new Swiper('.pc', {
+          autoplay: true, //可选选项，自动滑动
+          loop: true, //无缝
+          speed: 2000,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+        var mySwiperWeb = new Swiper('.web', {
+          autoplay: true, //可选选项，自动滑动
+          loop: true, //无缝
+          speed: 2000,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      }
+    </script>
+    <!-- 主要内容 结束 -->
+
+    <!-- 当模块化时，iframe的宽度和高度不易自适应屏幕大小，响应式的网页随着变化的时候，易出现滚动条栏目 -->
+    <!-- <iframe
+      border="0"
+      id="content"
+      src="demo.html"
+      frameborder="1"
+      height="100%"
+      width="100%"
+    ></iframe>
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+      myjq = jQuery.noConflict();
+      var iframeHeight = function () {
+        var _height = myjq(window).height() - 460;
+        myjq('#content').height(_height);
+      };
+      window.onresize = iframeHeight;
+      myjq(function () {
+        iframeHeight();
+      });
+    </script> -->
+    <footer>
+      <div class="container sx-footer">
+        <div class="left">
+          <div class="cic">
+            <a class="footer-link pl10" href="javascript:void(0)">公司网站</a>
+            <a href="javascript:void(0)">加入我们</a>
+            <a href="javascript:void(0)">服务协议</a>
+            <a href="javascript:void(0)" style="border: none;">隐私协议</a>
+          </div>
+          <p class="address">公司名称：易泰利金（武汉）商务智能科技有限公司</p>
+          <p class="address">客服热线：400-8518-606</p>
+          <p class="address">
+            公司地址：中国湖北省武汉市东湖新技术开发区光谷大道120号
+          </p>
+          <p class="address">
+            <a class="ban1" href="http://www.beian.miit.gov.cn" target="_blank"
+              >备案号&nbsp;鄂ICP备19031205号</a
+            >
+          </p>
+        </div>
+        <div class="right">
+          <p class="wx">官方微信</p>
+          <img src="./images/wlb_wx.jpg" alt="微信二维码" />
+        </div>
+        <div class="right">
+          <p class="wx">小程序端</p>
+          <img src="./images/ewm1.jpg" alt="小程序二维码" />
+        </div>
+        <div class="right">
+          <p class="wx">团长入驻</p>
+          <img src="./images/ewm2.jpg" alt="小程序二维码" />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    $('.navbar-toggler').on('click', function (e) {
+      $('.masker').toggle();
+    });
+    $('.masker').on('click', function (e) {
+      $(this).css('display', 'none');
+      $('#navbarSupportedContent').toggleClass('show');
+    });
+  </script>
 </html>
